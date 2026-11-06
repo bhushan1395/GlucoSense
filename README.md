@@ -118,59 +118,50 @@ flowchart TD
     C --> F
 ```
 
+
 ## Machine Learning Pipeline
 
-The GlucoSense ML module explores regression-based glucose estimation using optical and physiological sensor features.
+GlucoSense contains two separate machine learning workflows.
 
-The experimental pipeline includes:
+### 1. Synthetic Demonstration Model
 
-1. Sensor data collection.
-2. Data preprocessing and cleaning.
-3. Signal quality assessment.
-4. Feature extraction.
-5. Model training and evaluation.
-6. Model artifact storage.
-7. Backend model integration.
-8. Dashboard visualization.
+- Algorithm: Random Forest Regressor
+- Training samples: 6,000 synthetic records
+- Input features: 16
+- Purpose: Dashboard and API functionality testing
+- Model version: demo-synthetic-1.0
 
-The trained model artifact is stored in:
+This model uses artificially generated sensor features and synthetic target values. It is not trained on actual human glucose measurements.
 
-```text
-backend/
-└── artifacts/
-    └── glucosense_model.joblib
-```
+### 2. Reference-Labelled Experimental Training Pipeline
 
-Model performance and generalization require independent validation using appropriately collected reference glucose measurements. The prototype does not establish clinical accuracy.
+A separate training script retrieves sensor observations with reference glucose labels from MongoDB.
 
-## Model Evaluation Results
+It evaluates:
+- ExtraTrees Regressor
+- Random Forest Regressor
+- HistGradientBoosting Regressor
 
-The experimental regression pipeline was evaluated using Mean Baseline and Ridge Regression models.
+Models are compared using MAE, RMSE and R².
 
-### Performance Comparison
+### Model Evaluation Results
 
-| Model | MAE | RMSE | R² Score |
+| Model | MAE | RMSE | R² |
 |---|---:|---:|---:|
 | Mean Baseline | 12.9004 | 22.0583 | -0.0075 |
 | Ridge Regression | 12.9174 | 22.0096 | -0.0030 |
 
-### Observations
+Note: These metrics are from a separately reported evaluation CSV and are not verified as the output of the current training.py script.
 
-- Ridge Regression achieved a slightly lower RMSE than the Mean Baseline.
-- The MAE of Ridge Regression was marginally higher.
-- Both models produced negative R² scores.
-- The current results indicate that the regression pipeline requires further improvement and validation.
+### Important Limitations
 
-### Future Improvements
+- Synthetic predictions do not represent actual glucose measurements.
+- Reference-labelled training requires reliable human reference glucose data.
+- Negative R² scores indicate poor performance in the reported evaluation.
+- Independent validation is required before making any glucose prediction accuracy claims.
 
-- Improve dataset quality and preprocessing.
-- Perform feature selection and engineering.
-- Collect reliable reference glucose measurements.
-- Experiment with additional regression algorithms.
-- Apply cross-validation and hyperparameter tuning.
-- Evaluate model generalization on independent test data.
+GlucoSense is an experimental research prototype, not a clinically validated medical device.
 
-> **Research Disclaimer:** These results represent experimental model evaluation only. The system is not clinically validated and must not be used for medical decisions.
 
 ## Project Structure
 
