@@ -101,8 +101,6 @@ The experimental optical illumination setup uses 850 nm and 940 nm near-infrared
 
 ## System Architecture
 
-## System Architecture
-
 ```mermaid
 flowchart TD
     A["ESP32 + Sensors"]
