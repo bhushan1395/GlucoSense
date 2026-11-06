@@ -40,6 +40,22 @@ Displays 12 spectral channel readings and their comparative visualization.
 
 > Note: The displayed glucose estimate is experimental and not clinically validated.
 
+## Hardware Implementation
+
+### Complete GlucoSense Hardware Setup
+
+The prototype integrates ESP32-based sensor acquisition, optical sensing modules, an ADC interface and an OLED display on a prototyping board.
+
+![GlucoSense Hardware Setup](backend/assets/hardware-overview.jpg)
+
+### NIR LED Illumination Setup
+
+The experimental optical illumination setup uses 850 nm and 940 nm near-infrared LEDs with current-limiting resistors.
+
+![GlucoSense NIR LED Setup](backend/assets/nir-led-setup.jpg)
+
+
+
 ## Hardware Components
 
 | Component | Purpose |
