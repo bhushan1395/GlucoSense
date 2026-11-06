@@ -101,33 +101,23 @@ The experimental optical illumination setup uses 850 nm and 940 nm near-infrared
 
 ## System Architecture
 
-```text
-       OPTICAL AND PHYSIOLOGICAL SENSORS
-                      |
-                      v
-                  ESP32
-                      |
-                      v
-              Wi-Fi Communication
-                      |
-                      v
-             FASTAPI BACKEND
-                      |
-             +--------+--------+
-             |                 |
-             v                 v
-       MONGODB ATLAS      ML PIPELINE
-             |                 |
-             v                 v
-       Reading Storage   Experimental Model
-             |                 |
-             +--------+--------+
-                      |
-                      v
-              REACT DASHBOARD
-                      |
-                      v
-          Visualization and Analysis
+## System Architecture
+
+```mermaid
+flowchart TD
+    A["ESP32 + Sensors"]
+    B["Wi-Fi Communication"]
+    C["FastAPI Backend"]
+    D[("MongoDB Atlas")]
+    E["ML Pipeline"]
+    F["React + Vite Dashboard"]
+
+    A --> B
+    B --> C
+    C <--> D
+    C --> E
+    E --> C
+    C --> F
 ```
 
 ## Machine Learning Pipeline
