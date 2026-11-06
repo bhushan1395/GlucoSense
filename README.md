@@ -108,15 +108,16 @@ The experimental optical illumination setup uses 850 nm and 940 nm near-infrared
 - Scikit-learn
 - Joblib
 
+
 ## System Architecture
 
 ```mermaid
 flowchart TD
-    A["ESP32 + Sensors"]
+    A["ESP32 + Sensors<br/>AS7343 | MAX30102<br/>MLX90614 | ADS1115"]
     B["Wi-Fi Communication"]
     C["FastAPI Backend"]
     D[("MongoDB Atlas")]
-    E["ML Pipeline"]
+    E["Experimental ML Pipeline"]
     F["React + Vite Dashboard"]
 
     A --> B
