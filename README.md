@@ -308,6 +308,9 @@ The API documentation is available through FastAPI Swagger UI at `/docs` when th
 GlucoSense is developed for educational and research purposes.
 
 It is not a certified or clinically validated glucose monitoring device. Optical and physiological sensor readings do not directly measure blood glucose. Experimental predictions must not replace standard glucose measurement devices or professional medical advice.
+## 🎥 Working Demonstration
+
+[▶ Watch / Download GlucoSense Working Demo](https://github.com/bhushan1395/GlucoSense/releases/download/v1.0.0/20261102_145314_1.mp4)
 
 ## Author
 
