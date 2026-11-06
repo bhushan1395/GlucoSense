@@ -24,5 +24,17 @@ backend/*_predictions.csv
 backend/glucosense_features.csv
 backend/glucosense_signal_quality*.csv
 
+# OS and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.bak
+
 # Keep the shipped inference model artifact tracked
 # (Do not add other training datasets or private artifacts.)
