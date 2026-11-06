@@ -28,13 +28,13 @@ The system integrates an ESP32-based sensor platform with a full-stack web appli
 
 ### Live Dashboard – Edge-AI Signal Monitor
 
-![GlucoSense Dashboard](assets/dashboard-overview.jpeg)
+![GlucoSense Dashboard](backend/assets/dashboard-overview.jpeg)
 
 The dashboard displays ESP32 connectivity, experimental model output, live PPG signals and sensor telemetry.
 
 ### Spectrometry – AS7343 Multispectral Sensor
 
-![AS7343 Spectrometry](assets/spectrometry-channels.jpeg)
+![AS7343 Spectrometry](backend/assets/spectrometry-channels.jpeg)
 
 Displays 12 spectral channel readings and their comparative visualization.
 
