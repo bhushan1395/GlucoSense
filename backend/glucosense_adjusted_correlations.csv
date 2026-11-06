@@ -1,0 +1,11 @@
+adjustment,signal_metric,N,adjusted_partial_spearman,p_value
+Age + BP + Signal length,filtered_std,207,-0.10635392855193014,0.13098231437755511
+Age + BP + Signal length,ac_dc_ratio,207,-0.038866924280204614,0.5819374482044908
+Age + BP + Signal length,pulse_interval_cv,207,-0.05275703748516795,0.45473091825097045
+Age + BP + Signal length,baseline_drift_std,207,-0.0853629233648549,0.22592009133682295
+Age + BP + Signal length,pulse_count,207,0.13707100328139699,0.05116232203857487
+Age + BP + Height + Weight,filtered_std,133,-0.16001062975153912,0.07120022916390567
+Age + BP + Height + Weight,ac_dc_ratio,133,-0.19315086760614417,0.028930719568649933
+Age + BP + Height + Weight,pulse_interval_cv,133,-0.14202784833408333,0.10977244622258689
+Age + BP + Height + Weight,baseline_drift_std,133,-0.1469112750072787,0.09796549050126811
+Age + BP + Height + Weight,pulse_count,133,0.03324857112889299,0.709462852648768
