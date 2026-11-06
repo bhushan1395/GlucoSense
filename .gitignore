@@ -1,0 +1,28 @@
+# Secrets and local environment
+.env
+.env.*
+!.env.example
+
+# Python
+.venv/
+.venv*/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+
+# Node / build output
+node_modules/
+dist/
+.vite/
+
+# Local datasets and participant-level exports
+backend/data/
+backend/labelled_participants.csv
+backend/*_predictions.csv
+backend/glucosense_features.csv
+backend/glucosense_signal_quality*.csv
+
+# Keep the shipped inference model artifact tracked
+# (Do not add other training datasets or private artifacts.)
