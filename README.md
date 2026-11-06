@@ -145,6 +145,35 @@ backend/
 
 Model performance and generalization require independent validation using appropriately collected reference glucose measurements. The prototype does not establish clinical accuracy.
 
+## Model Evaluation Results
+
+The experimental regression pipeline was evaluated using Mean Baseline and Ridge Regression models.
+
+### Performance Comparison
+
+| Model | MAE | RMSE | R² Score |
+|---|---:|---:|---:|
+| Mean Baseline | 12.9004 | 22.0583 | -0.0075 |
+| Ridge Regression | 12.9174 | 22.0096 | -0.0030 |
+
+### Observations
+
+- Ridge Regression achieved a slightly lower RMSE than the Mean Baseline.
+- The MAE of Ridge Regression was marginally higher.
+- Both models produced negative R² scores.
+- The current results indicate that the regression pipeline requires further improvement and validation.
+
+### Future Improvements
+
+- Improve dataset quality and preprocessing.
+- Perform feature selection and engineering.
+- Collect reliable reference glucose measurements.
+- Experiment with additional regression algorithms.
+- Apply cross-validation and hyperparameter tuning.
+- Evaluate model generalization on independent test data.
+
+> **Research Disclaimer:** These results represent experimental model evaluation only. The system is not clinically validated and must not be used for medical decisions.
+
 ## Project Structure
 
 ```text
