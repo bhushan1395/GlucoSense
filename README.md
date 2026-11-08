@@ -1,3 +1,5 @@
+<div align="center">
+
 # GlucoSense – Non-Invasive Glucose Monitoring System
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
@@ -5,14 +7,12 @@
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
 ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
-<img src="https://img.shields.io/badge/-ESP32-555555?style=for-the-badge" />
-&nbsp;&nbsp;
-<img src="https://img.shields.io/badge/-IOT-e44045?style=for-the-badge" />
+<img src="https://img.shields.io/badge/-ESP32-555555?style=for-the-badge" />&nbsp;&nbsp;<img src="https://img.shields.io/badge/-IOT-e44045?style=for-the-badge" />
+![Scikit Learn](https://img.shields.io/badge/Scikit--Learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white)
 
+### An Experimental IoT and Machine Learning Research Prototype
 
-<p align="center">
-  <strong>An Experimental IoT and Machine Learning Research Prototype</strong>
-</p>
+</div>
 
 GlucoSense is an experimental non-invasive glucose monitoring research project that explores the use of optical sensing, physiological signals, IoT hardware, and Machine Learning for glucose estimation.
 
