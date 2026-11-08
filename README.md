@@ -64,12 +64,16 @@ The experimental optical illumination setup uses 850 nm and 940 nm near-infrared
 
 ![GlucoSense NIR LED Setup](backend/assets/nir-led-setup.jpg)
 
-
+<div align="center">
 
 ## Hardware Components
 
+</div>
+
+<div align="center">
+
 | Component | Purpose |
-|---|---|
+|:---:|:---:|
 | ESP32 DevKit V1 | Main microcontroller |
 | AS7343 | Multispectral optical sensing |
 | MAX30102 | PPG and pulse signal acquisition |
@@ -77,6 +81,8 @@ The experimental optical illumination setup uses 850 nm and 940 nm near-infrared
 | ADS1115 | 16-bit ADC |
 | SSD1306 OLED | Sensor status and readings display |
 | 850 nm / 940 nm LEDs | Near-infrared illumination |
+
+</div>
 
 ## Technology Stack
 
@@ -114,10 +120,10 @@ The experimental optical illumination setup uses 850 nm and 940 nm near-infrared
 
 ```mermaid
 flowchart TD
-    A["ESP32 + Sensors<br/>AS7343 | MAX30102<br/>MLX90614 | ADS1115"]
+    A["ESP32 + Sensors"]
     B["Wi-Fi Communication"]
     C["FastAPI Backend"]
-    D[("MongoDB Atlas")]
+    D["MongoDB Atlas"]
     E["Experimental ML Pipeline"]
     F["React + Vite Dashboard"]
 
@@ -127,8 +133,8 @@ flowchart TD
     C --> E
     E --> C
     C --> F
-```
 
+```
 
 ## Machine Learning Pipeline
 
